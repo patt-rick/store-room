@@ -45,6 +45,8 @@ export default {
             font-size: 12px;
             letter-spacing: 0.1em;
             padding: 6px;
+            box-shadow: 1px 1px 4px rgba(#000, 0.3);
+            outline: none;
             cursor: pointer;
 
             &:hover{
