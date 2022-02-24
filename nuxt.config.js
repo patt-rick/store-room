@@ -18,7 +18,18 @@ export default {
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs:[
+      '~/components',
+      '~/components/cards',
+      '~/components/crud',
+      '~/components/forms',
+      '~/components/navigations',
+      '~/components/tables',
+      '~/components/modals'
+
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [],

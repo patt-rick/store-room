@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="aa">
       <div class="crud-wrap">
           <div class="crud-add">
-              <button>add</button>
+              <button @click="addI">add</button>
           </div>
           <div class="crud-edit">
               <button>edit</button>
@@ -12,11 +12,22 @@
           </div>
           <span>ITEM</span>
       </div>
+      <add-item class="bb" v-show="addItem" @closeit="addI"></add-item>
   </div>
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+            addItem: false,
+        }
+    },
+    methods:{
+        addI(){
+            this.addItem = !this.addItem;
+        }
+    }
 
 }
 </script>
@@ -24,6 +35,13 @@ export default {
 <style lang="scss">
     $primary-color: #5C415D;
     $accent-color: #ffcba4;
+    .aa{
+        position: relative;
+    }
+    .bb{
+        position: absolute;
+        top: 0;
+    }
     .crud-wrap{
         background-color: #fff;
         max-width: 250px;

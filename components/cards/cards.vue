@@ -17,7 +17,7 @@
                   <span>Shoes</span>
                   <span class="brand">GUCCI</span>
               </div>
-              <img src="../assets/arts-collectibles.jpg" loading="lazy" alt="" >
+              <img src="@/assets/arts-collectibles.jpg" loading="lazy" alt="" >
           </div>
       </div>
   </div>

@@ -30,24 +30,24 @@ export default {
     max-height: 300px;
     overflow: scroll;
     width: 260px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
 }
 .not-scroll::-webkit-scrollbar{
-    display: none;
+    width: 3px;
 }
 
 .color-indicator-green{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: green;
+    height: 0px;
+    width: 0px;
+    border: 6px solid transparent;
+    border-bottom-color: green;
 }
 .color-indicator-red{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: red;
+    height: 0px;
+    width: 0px;
+    border: 6px solid transparent;
+    border-top-color: red;
 }
 .restock-table{
     min-width: 235px;
