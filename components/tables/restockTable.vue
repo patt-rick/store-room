@@ -18,7 +18,7 @@
 export default {
     data(){
         return{
-            txt:[{message: 'one',value: 10},{message: 'crime',value: 43},{message: 'three',value: 3},{message: 'four',value: 43},{message: 'five',value: 43},{message: 'six',value: 43},{message: 'one',value: 43},{message: 'crime',value: 43},{message: 'three',value: 43},{message: 'four',value: 43},{message: 'five',value: 43},{message: 'six',value: 43}]
+            txt:[{message: 'one',value: 10},{message: 'crime',value: 43},{message: 'three',value: 3},{message: 'four',value: 43},{message: 'five',value: 43},{message: 'six',value: 43},{message: 'one1',value: 43},{message: 'crimec',value: 43},{message: 'three3',value: 43},{message: 'four4',value: 43},{message: 'five5',value: 43},{message: 'six6',value: 43}]
         }
     }
 
@@ -55,7 +55,7 @@ export default {
     background-color: #fff;
     // border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 1px 1px 4px rgba(#000,0.2);
+    box-shadow: 0.5px 0.5px 4px rgba(#000,0.2);
 
     display: flex;
     flex-direction: column;

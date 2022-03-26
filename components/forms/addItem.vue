@@ -10,7 +10,7 @@
                 <input type="submit" value="add item"><input @click="close" type="button" value="cancel">
                 </div>
             </form>  
-        </div>
+    </div>
 </div>    
 </template>
 
@@ -18,6 +18,7 @@
 export default {
     data(){
         return{
+            confirm: true,
             name: '',
             type: '',
             quantity: null,
@@ -38,6 +39,7 @@ export default {
         },
         close(){
             this.$emit('closeit')
+            this.confirm = true
         }
     }
 
@@ -45,7 +47,6 @@ export default {
 </script>
 
 <style lang="scss">
-$primary-color: #5C415D;
 .add-item-modal{
     position: fixed;
     top: 0;

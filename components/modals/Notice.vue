@@ -25,22 +25,22 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
     background-color: rgba(#000,0.3);
     z-index: 100;
 }    
 .mainn{
-        width: 60vw;
+        width: 80vw;
         max-width: 250px;
-        height: 20vh;
+        height: 80px;
         position: fixed;
-        bottom: 80px;
+        top: 120px;
         margin: auto;
-        border-radius: 12px;
+        border-radius: 5px;
         background-color: #fff;
         color: #777;
         font-size: 1.3em;
@@ -50,7 +50,7 @@ export default {
         justify-content: center;
         align-items: center;
         text-align: center;
-        box-shadow: 1px 1px 10px rgba(#000,0.4);
+        box-shadow: 1px 1px 40px rgba(#000,0.3);
         transition: all 1s ease-in-out;
 }
 .mainn>span{
@@ -59,33 +59,35 @@ export default {
     width: 90%;
 }
 .mainn >span:after{
-    content:'!';
+    content:'';
+    display: inline-block;
     font-size: 2.5em;
     color: #aaa;
     position: absolute;
-    right: 15px;
-    bottom: -4px;
+    // right: 2px;
+    // bottom: -4px;
 }
-    @media only screen and (min-width: 672px){
-        .mainn{
-            width: 250px;
-            height: 100px;
-            position: fixed;
-            right: 100px;
-            bottom: calc(70vh);
-        }
-    }
-     @media only screen and (max-width: 360px){
+
+    @media only screen and (max-width: 360px){
          .mainn{
              font-size: 1.1em;
          }
          .mainn >span:after{
-            content:'!';
+            content:'';
             font-size: 2.5em;
             color: #aaa;
             position: absolute;
-            right: 0px;
-            bottom: -4px;
+            // right: 0px;
+            // bottom: -4px;
         }
      }
+    @media only screen and (min-width: 672px){
+        .mainn{
+            min-width: 340px;
+            height: 60px;
+            position: fixed;
+            right: 120px;
+            top: 100px;
+        }
+    }
 </style>

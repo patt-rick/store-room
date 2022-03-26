@@ -35,12 +35,10 @@ export default {
 </script>
 
 <style lang="scss">
-    $primary-color: #5C415D;
-    $accent-color: #ffcba4;
     $grey: #ccc;
     .m{
         display: inline-block;
-        margin: 10px;
+        margin: 5px;
     }
     .wrap{
         height: 200px;
@@ -49,7 +47,7 @@ export default {
         border: 0px solid $grey;
         border-radius: 10px;
         padding: 7px;
-        box-shadow: 0.5px 2px 4px rgba(#000,0.2);
+        box-shadow: 0.5px 0.5px 2px rgba(#000,0.2);
         font-family: sans-serif;
 
         display: flex;

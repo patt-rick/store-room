@@ -33,8 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-    $primary-color: #5C415D;
-    $accent-color: #ffcba4;
     .aa{
         position: relative;
     }

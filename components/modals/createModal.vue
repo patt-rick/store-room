@@ -35,9 +35,6 @@ export default {
 </script>
 
 <style lang="scss">
-$primary-color: #5C415D;
-$accent-color: #ffcba4;
-
     .modal{
         position: fixed;
         top: 0;
@@ -76,15 +73,15 @@ $accent-color: #ffcba4;
             margin: 0px 16px;
             border-radius: 6px;
             cursor: pointer;
-            background-color: $primary-color ;
+            background-color: #fff ;
             border: 1px solid $primary-color;
-            color: $accent-color;
+            color: $primary-color;
             font-weight: 400;
             letter-spacing: 0.2em;
-            box-shadow: 1px 1px 4px rgba(#000,0.2);
+            box-shadow: 1px 1px 4px rgba($primary-color,0.2);
             transition: 0.43 ease-in;
             &:hover{
-                background-color: rgba($color: $primary-color, $alpha: 0.9);
+                background-color: rgba($color: $primary-color, $alpha: 0.1);
             }
         }
     }
@@ -121,7 +118,7 @@ $accent-color: #ffcba4;
             box-shadow: 1px 1px 4px rgba(#000,0.2);
             transition: 0.43 ease-in;
             &:hover{
-                background-color: rgba($color: $primary-color, $alpha: 0.9);
+                background-color: rgba($color: $primary-color, $alpha: 0.1);
             }
         }
     }

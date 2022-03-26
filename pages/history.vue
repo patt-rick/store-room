@@ -3,14 +3,16 @@
     <h3>history page</h3>
     <app-crud></app-crud>
     <restock-table></restock-table>
-    <h2>sjkhkug</h2>
+    <notice message="Item created successfully"/>
   </div>
 
 </template>
 
 <script>
+import Notice from '~/components/modals/Notice.vue'
  
 export default {
+  components: { Notice },
 
 }
 </script>

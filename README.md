@@ -6,6 +6,9 @@
 # install dependencies
 $ npm install
 
+# install nuxtjs
+& npm install --save nuxt
+
 # serve with hot reload at localhost:3000
 $ npm run dev
 

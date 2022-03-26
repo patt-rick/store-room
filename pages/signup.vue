@@ -19,7 +19,7 @@
                     <input v-model="TandC" type="checkbox" name="" id="">
                     <span>I've read and agree with T&C</span>
                 </div>
-                <div><button>sign up</button></div>
+                <div><button :disabled='!TandC'>sign up</button></div>
                 <div class="extra-line">
                     <span>Already have an account?</span>
                     <nuxt-link to="/login">Sign In</nuxt-link>
@@ -54,8 +54,6 @@ export default {
 </script>
 
 <style lang="scss">
-$primary-color: #5C415D;
-
 body {
 //   background: linear-gradient(90deg, $primary-color 0%, #182848 100%);
     background-color: rgba($primary-color, 0.4);

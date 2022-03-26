@@ -3,13 +3,12 @@
   <div class="routes">
     <Nuxt />
   </div>
-  <div class="header">gt<div class="t"><h3>header</h3></div></div>
+  <div class="header"><appheader/></div>
   <!-- <div class="footer">footer </div> -->
-  <div class="navigations">navigation </div>
+  <div class="navigations"><appnav/></div>
 </div>
 </template>
 <style lang="scss" scoped>
-$primary-color: #5C415D;
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -21,25 +20,27 @@ $primary-color: #5C415D;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $primary-color;
-  box-shadow: 0px 1px 4px rgba(#000,0.2);
+  right:0;
+  background-color: #fff;
+  // box-shadow: 0px 1px 4px rgba(#000,0.2);
 
 }
 .navigations{
-  width: 95%;
-  margin-left: 2.5%;
-  height: 50px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+  width: 100%;
+  // margin-left: 2.5%;
+  height: 55px;
+  // border-radius: 20px;
+  // margin-bottom: 10px;
   position: fixed;
   bottom: 0;
   left:0;
+  right: 0;
   background-color: $primary-color;
-  box-shadow: 3px 3px 6px rgba(#000,0.3),
-  -3px -3px 6px rgba(#000,0.3);
+  // box-shadow: 3px 3px 6px rgba(#000,0.3),
+  // -3px -3px 6px rgba(#000,0.3);
 }
 .routes{
-  padding-top: 55px;
+  padding-top: 45px;
   margin-bottom: 60px;
   background-color: #efefef;
 }

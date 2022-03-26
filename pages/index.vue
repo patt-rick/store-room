@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+      <feed-table/>
     <cards />
     <cards />
     <cards />
@@ -11,7 +12,22 @@
 </template>
 
 <script>
+import feedTable from '~/components/tables/feedTable.vue';
 export default {
+  components: { feedTable },
+   head(){
+        return{
+            title: "Dashboard",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content: "just about the dashboard "
+                    
+                }
+            ]
+        };
+    },
     data(){
         return{
             show: false,

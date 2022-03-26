@@ -38,8 +38,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-$primary-color: #5C415D;
 body {
     background-color: rgba($primary-color, 0.4);
 }
@@ -55,7 +53,7 @@ svg{
 .pw{
   position: relative;
 }
-i{
+.login i{
   display: inline-block;
   color: #888;
   font-size: 0.8em;
