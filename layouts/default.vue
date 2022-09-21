@@ -14,14 +14,9 @@
     grid-template-rows: 60px calc(100vh - 110px) 50px;
     background-color: #fff;
 }
-.header {
-    border: 1px solid red;
-}
+
 .routes {
-    border: 1px solid red;
-}
-.navigations {
-    border: 1px solid red;
+    background-color: #efefef;
 }
 
 @media only screen and (min-width: 720px) {
@@ -32,20 +27,17 @@
     }
     .header {
         grid-area: 1 / 2 / 2 / 3;
-        border: 1px solid red;
     }
     .routes {
         grid-area: 2 / 2 / 3 / 3;
-        border: 1px solid red;
     }
     .navigations {
         grid-area: 1 / 1 / 3 / 2;
-        border: 1px solid red;
     }
 }
 @media only screen and (min-width: 1024px) {
     .parent {
-        grid-template-columns: 200px calc(100% - 200px);
+        grid-template-columns: 220px calc(100% - 220px);
     }
 }
 </style>

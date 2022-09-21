@@ -49,12 +49,14 @@ export default {};
 <style lang="scss">
 .appnav-main {
     height: 100%;
+    background-color: $primary-color;
     .name,
     .company,
     .logout {
         display: none;
     }
     .appnav-wrap {
+        color: #fff;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -70,7 +72,7 @@ export default {};
         align-items: center;
         .logout {
             display: inline-block;
-            padding: 10px;
+            padding: 20px;
             font-size: 1.2rem;
         }
         .appnav-wrap {
@@ -96,15 +98,17 @@ export default {};
         .company,
         .logout {
             display: block;
+            font-weight: bold;
         }
         .company {
             padding: 40px 10px 20px 10px;
+            color: $accent-color;
         }
 
         .appnav-wrap {
-            margin-top: 0px;
+            margin-top: -150px;
             align-items: flex-start;
-            padding: 15px;
+            padding: 15px 30px;
 
             i {
                 padding-right: 15px;

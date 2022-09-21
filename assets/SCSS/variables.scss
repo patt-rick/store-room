@@ -2,5 +2,8 @@ $primary-color: #040720;
 $accent-color: #ec9e63;
 
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+a.nuxt-link-exact-active {
+    color: $accent-color;
 }
