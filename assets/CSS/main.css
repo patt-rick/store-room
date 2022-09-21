@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* a.nuxt-link-active {
+    
+    text-transform: uppercase;
+} */
+a.nuxt-link-exact-active {
+    color: #00c58e;
+    font-weight: bold;
+}
