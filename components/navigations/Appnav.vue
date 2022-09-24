@@ -4,31 +4,32 @@
             <h2>Store-Room</h2>
         </div>
         <div class="appnav-wrap">
-            <span class="link">
-                <nuxt-link active to="/">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span class="name">Dashboard</span>
-                </nuxt-link>
-            </span>
-            <span class="link">
-                <nuxt-link to="/home">
+            <span class="link home">
+                <nuxt-link to="/">
                     <i class="fa-solid fa-house-chimney"></i>
                     <span class="name">Home</span>
                 </nuxt-link>
             </span>
-            <span class="link">
+            <span class="link dashboard">
+                <nuxt-link active to="/dashboard">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="name">Dashboard</span>
+                </nuxt-link>
+            </span>
+
+            <span class="link inventory">
                 <nuxt-link to="/inventory">
                     <i class="fa-solid fa-warehouse"></i>
                     <span class="name">Inventory</span>
                 </nuxt-link>
             </span>
-            <span class="link">
+            <span class="link restock">
                 <nuxt-link to="/restock">
                     <i class="fa-solid fa-boxes-stacked"></i>
                     <span class="name">Restock</span>
                 </nuxt-link>
             </span>
-            <span class="link">
+            <span class="link history">
                 <nuxt-link to="/history">
                     <i class="fa-solid fa-clock-rotate-left"></i>
                     <span class="name">History</span>
@@ -62,6 +63,22 @@ export default {};
         justify-content: space-evenly;
         align-items: center;
         font-size: 1.15rem;
+
+        .home {
+            order: 3;
+        }
+        .dashboard {
+            order: 1;
+        }
+        .restock {
+            order: 4;
+        }
+        .history {
+            order: 5;
+        }
+        .inventory {
+            order: 2;
+        }
     }
 }
 @media only screen and (min-width: 720px) {
@@ -88,6 +105,22 @@ export default {};
 
             i {
                 padding: 15px 3px;
+            }
+
+            .home {
+                order: 1;
+            }
+            .dashboard {
+                order: 2;
+            }
+            .restock {
+                order: 4;
+            }
+            .history {
+                order: 5;
+            }
+            .inventory {
+                order: 3;
             }
         }
     }

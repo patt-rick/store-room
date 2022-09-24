@@ -1,13 +1,9 @@
 <template>
     <div class="app-header-wrap">
         <span>Company Name</span>
-        <span
-            ><strong class="route">{{ $route.name }}</strong></span
-        >
         <div class="main-profile">
-            <div @click="poplogout" class="profile">
-                <img src="" height="30" width="30" alt="" />
-            </div>
+            <div class="username">Mitchelle</div>
+            <div @click="poplogout" class="profile"></div>
             <div v-show="showlogout" class="logout">
                 <nuxt-link to="/login">logout</nuxt-link>
             </div>
@@ -47,7 +43,12 @@ export default {
 
     .main-profile {
         position: relative;
-
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .username {
+            font-weight: 200;
+        }
         .logout {
             position: absolute;
             top: 37px;
@@ -62,8 +63,9 @@ export default {
     }
 
     .profile {
-        height: 30px;
-        width: 30px;
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         overflow: hidden;
         border: 2px solid $accent-color;

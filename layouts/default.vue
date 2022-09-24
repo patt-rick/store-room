@@ -16,7 +16,15 @@
 }
 
 .routes {
+    padding: 5px;
     background-color: #efefef;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.routes::-webkit-scrollbar {
+    display: none;
 }
 
 @media only screen and (min-width: 720px) {
@@ -30,7 +38,10 @@
     }
     .routes {
         grid-area: 2 / 2 / 3 / 3;
+        scrollbar-width: 20px;
+        -ms-overflow-style: none;
     }
+
     .navigations {
         grid-area: 1 / 1 / 3 / 2;
     }
